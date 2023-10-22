@@ -24,6 +24,7 @@
 
   --border-image: 10px 0px 0px 10px;
   --border-mobile: 10px 10px 0px 0px;
+  --shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .clr-primary-100 {color: var(--clr-primary-100);}
@@ -144,6 +145,7 @@ body {
 .container {
   background-color: var(--clr-neutral-100);
   border-radius: var(--border-radius);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);;
 }
 
 .perfume-img {
@@ -164,6 +166,10 @@ body {
 
   .perfume-img[data="mobile"]{
     display: none;
+  }
+
+  body {
+    transition: 0.7s;
   }
 }
 
@@ -196,6 +202,7 @@ body {
 .button:hover,
 .button:focus-visible {
   background-color: var(--clr-dark-green);
+  transition: 0.3s;
 }
 
 @media (max-width: 40em) {
@@ -212,5 +219,12 @@ body {
   .grid-two {
     padding-bottom: 26px;
     padding-top: 16px;
+  }
+  body {
+    align-items: start;
+    margin-top: 40px;
+    justify-content: center;
+    transition: 0.7s;
+    /* transition-duration: 0.3s; */
   } 
 }
