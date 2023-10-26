@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');/* Box sizing rules */
+
+/*Custom Properties*/
 :root {
   --bg: hsl(30, 38%, 92%);
   --clr-primary-green: hsl(158, 36%, 37%);
@@ -27,6 +29,7 @@
   --shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
+/*Utilities Classes*/
 .clr-primary-100 {color: var(--clr-primary-100);}
 .clr-black {  color: var(--clr-neutral-700);}
 .clr-green { color: var(--clr-primary-green);}
@@ -63,6 +66,7 @@
 
 .fs-tiny {font-size: var(--fs-300);}
 
+/*Reset https://piccalil.li/blog/a-modern-css-reset*/
 *,
 *::before,
 *::after {
